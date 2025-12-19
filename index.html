@@ -1,130 +1,160 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Peeter Tammoja – Portfoolio</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
       background: #f4f6f8;
-      color: #2c3e50;
-      padding: 40px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      margin-top: 30px;
-    }
-
-    p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 10px auto;
-      line-height: 1.6;
-    }
-
-    ul {
-      list-style: none;
+      margin: 0;
       padding: 0;
-      margin: 0 auto;
-      max-width: 400px;
-      font-size: 18px;
-      line-height: 1.6;
-      text-align: left;
+      text-align: center;
+      color: #2c3e50;
     }
 
-    li {
-      margin-bottom: 8px;
-    }
-
-    .container {
-      background: white;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
-
-    a {
-      color: #0077ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    .hero {
+      padding: 60px 20px;
+      background: #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
     .profiil {
-      width: 180px;
-      height: 180px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
+      border: 4px solid #0077ff;
       margin-bottom: 20px;
     }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 38px;
+      font-weight: bold;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 10px auto;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .project {
+      background: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0077ff;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: #005fcc;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background: #e9ebed;
+      font-size: 16px;
+    }
+
   </style>
 </head>
 
 <body>
 
-  <div class="container">
-    
-    <img src="peeter.jpg" alt="Peeter Tammoja" class="profiil">
+  <section class="hero">
+    <img src="peeter.jpg" alt="Peeter Tammoja" class="profiil" />
 
     <h1>Peeter Tammoja</h1>
 
     <p>
-      Olen arenev IT-arendaja, kellel on päris projekt juba kasutuses.
-      Töötan HTML, CSS ja JavaScriptiga ning ehitasin WordPressi jaoks
-      võistluse registreerimissüsteemi admin-kaitsega, Exceli ekspordi
-      ja mobiilivaatega.
+      Olen arenev IT-arendaja Tartust. Ehitama hakkasin WordPressile
+      võistluseregistreerimise süsteemi, mis töötab päriselt ning mida
+      kasutavad inimesed. Soovin kasvada frontendi arendaja suunas – HTML,
+      CSS ja JavaScript on juba kasutuses.
     </p>
 
-    <p>
-      Soovin edasi areneda, õppida juurde JavaScripti, projekte hallata
-      GitHubis ning kasvada täisväärtuslikuks frontendi arendajaks.
-      Ootan huviga võimalust oma oskusi päris tööolukorras rakendada.
-    </p>
+    <a href="CV_Peeter_Tammoja.pdf" class="btn" download>📄 Laadi alla CV</a>
+  </section>
+
+  <div class="container">
 
     <h2>Projektid</h2>
 
+    <div class="project">
+      <h3>📌 Võistluseregistreerimise süsteem (HTML + JS)</h3>
+      <p>
+        Täisfunktsionaalne registreerimise süsteem admin-parooliga,
+        topeltsisestuse kontrolliga, Exceli ekspordi ja reaalajas tabeliga.
+        Koos mobiilivaatega. Kasutuses WordPressis.
+      </p>
+      <a href="https://voistlus.apexenduro.com" target="_blank" class="btn">Vaata lehte</a>
+    </div>
+
+    <div class="project">
+      <h3>📌 WordPress regamisvorm pluginaga</h3>
+      <p>
+        Kasutajaliides WordPressi sisseehitatud vormipluginaga, mis salvestab
+        registreerimisandmeid ja kuvab need adminvaates. Mobiilikohandatud.
+      </p>
+      <a href="#" target="_blank" class="btn">Vaata lehte</a>
+    </div>
+
+    <div class="project">
+      <h3>📌 Portfoolio (see leht)</h3>
+      <p>
+        Isiklik portfoolio, kus näha oskused, projektid ja areng. Valminud käsitsi HTML-is
+        ning avaldatud GitHub Pagesi kaudu.
+      </p>
+      <a href="/" class="btn">Uuri</a>
+    </div>
+
+    <h2>Kontaktid</h2>
+
     <p>
-      ⭐ <a href="https://github.com/petstammoja/voistluse-registreerimine" target="_blank">
-        Võistluse registreerimissüsteem (JavaScript + WordPress)
-      </a>
-    </p>
-
-    <h2>Oskused</h2>
-
-    <ul>
-      <li>HTML – tugev algtase</li>
-      <li>CSS – tugev algtase</li>
-      <li>JavaScript – algtase</li>
-      <li>Git ja GitHub – algtase</li>
-      <li>WordPress – hea praktiline oskus</li>
-    </ul>
-
-    <h2>Kontakt</h2>
-
-    <p>
-      📍 Tartu, Eesti<br>
-      📧 <a href="mailto:petstammoja@gmail.com">petstammoja@gmail.com</a>
-    </p>
-
-    <p>
-      📄 <a href="peeter_tammoja_cv.pdf" target="_blank">
-        Laadi alla minu CV (PDF)
-      </a>
+      📩 <strong>E-post:</strong> peeter.tammoja@gmail.com<br>
+      📍 Tartumaa
     </p>
 
   </div>
+
+  <footer>
+    © 2025 Peeter Tammoja — Valmis käsitööna
+  </footer>
 
 </body>
 </html>
